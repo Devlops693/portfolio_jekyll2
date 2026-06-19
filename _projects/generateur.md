@@ -1,5 +1,5 @@
 ---
-title: "énérateur de CV PDF"
+title: "Générateur de CV PDF"
 summary: "Conception d'un outil permettant de générer automatiquement un CV au format PDF à partir de données utilisateur."
 date: 2026-02-01
 tech: ["PHP", "JavaScript", "HTML", "CSS"]
