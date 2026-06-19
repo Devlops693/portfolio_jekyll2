@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+  </header>
+
+  {% if page.tech %}
+  <p><strong>Technologies :</strong> {{ page.tech | join: ", " }}</p>
+  {% endif %}
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <p class="project-links">
+    {% if page.repo %}<a href="{{ page.repo }}">Code source</a>{% endif %}
+    {% if page.demo %} · <a href="{{ page.demo }}">Démo</a>{% endif %}
+  </p>
+
+  <p><a href="{{ '/projects/' | relative_url }}">← Retour aux projets</a></p>
+</article>

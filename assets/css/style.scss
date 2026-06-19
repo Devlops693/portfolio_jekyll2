@@ -1,0 +1,22 @@
+---
+# Ce front matter vide est obligatoire : il dit à Jekyll de compiler ce SCSS.
+---
+
+@import "minima";
+
+/* --- Petites améliorations perso (couleurs, espacements) --- */
+.project-list { list-style: none; padding: 0; }
+.project-list li { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #444; }
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 480px;
+  padding: .5rem;
+}
+.contact-form button {
+  padding: .5rem 1.2rem;
+  cursor: pointer;
+}
+
+/* Vérifie le contraste texte/fond avec Lighthouse (accessibilité). */

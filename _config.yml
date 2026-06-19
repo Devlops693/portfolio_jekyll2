@@ -1,0 +1,52 @@
+# ============================================================
+#  CONFIGURATION JEKYLL  —  À PERSONNALISER (lignes marquées 👉)
+# ============================================================
+
+title: "Portfolio — Prénom Nom"          # 👉 ton nom
+description: "Portfolio professionnel de Prénom Nom — [ta spécialité]."   # 👉 phrase courte (sert au SEO)
+author: "Prénom Nom"                      # 👉
+email: "prenom.nom@example.com"           # 👉
+
+# URL du site publié.
+#  - user.github.io/NOM-DU-REPO  ->  url = "https://USER.github.io" et baseurl = "/NOM-DU-REPO"
+#  - USER.github.io (repo nommé USER.github.io) -> baseurl = ""
+url: "https://VOTRE-USER.github.io"       # 👉
+baseurl: "/VOTRE-REPO"                    # 👉  (ou "" si repo USER.github.io)
+
+lang: fr
+
+# --- Thème (obligatoire dans le sujet) ---
+theme: minima
+minima:
+  skin: dark        # classic | dark | solarized ...  (au choix)
+
+# --- Plugins SEO / accessibilité ---
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag      # génère <title>, meta description, balises OpenGraph
+  - jekyll-sitemap      # génère sitemap.xml (référencement)
+
+# --- Menu de navigation (minima lit cette liste) ---
+header_pages:
+  - about.md
+  - projects.md
+  - contact.md
+
+# --- Collection "projets" (un fichier .md = un projet) ---
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
