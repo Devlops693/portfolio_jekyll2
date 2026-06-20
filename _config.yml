@@ -8,7 +8,7 @@ lang: fr
 
 theme: minima
 minima:
-  skin: dark
+  skin: classic
 
 # --- Plugins SEO / accessibilité ---
 plugins:
