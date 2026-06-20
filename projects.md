@@ -18,7 +18,3 @@ les technologies utilisées et les liens utiles.
 {% endfor %}
 </ul>
 
-<!--
-  Pour ajouter un projet : crée un fichier dans _projects/ (ex: _projects/mon-projet.md).
-  Il apparaîtra automatiquement ici.
--->
