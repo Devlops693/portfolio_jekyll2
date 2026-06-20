@@ -13,6 +13,6 @@ description: "Portfolio professionnel de Bouchra BENREBAI."
 Étudiante en première année à la web@cademy by Epitech passionnée par le développement web et notamment le côté Frontend.
 Je conçois des sites internets et des applications web conformes et intuitifs et je cherche une alternance pour une durée de 12 mois avec un rythme de 3 semaines en entreprise/1 semaine à l'école.
 
-[En savoir plus sur moi]({{ '/about/' | relative_url }}) ·
-[Voir mes projets]({{ '/projects/' | relative_url }}) ·
-[Me contacter]({{ '/contact/' | relative_url }})
+[En savoir plus sur moi]({% link about.md %}) ·
+[Voir mes projets]({% link projects.md %}) ·
+[Me contacter]({% link contact.md %})
